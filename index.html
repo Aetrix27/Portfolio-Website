@@ -22,7 +22,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand text-white" href="/">David's Portfolio</a>
+        <a class="navbar-brand text-white" href="index.html">David's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" href="/">Projects <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="index.html">Projects <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="resume.html">Resume</a>
@@ -46,7 +46,7 @@
     <div class="container mb-5 mt-5">
         <!-- THE BENEFITS COLUMNS -->
 
-        <div class="jumbotron text-center bg-light">
+        <div class="jumbotron text-center">
             <h3 class="m2">In Stock Gaming Hardware Checker
 
             </h3>
@@ -59,29 +59,50 @@
                 soon as they are available, and the global silicon chip shortage. This gives power back to the people.
             </p>
             <div class="container">
-                <img src="{{ url_for('static', filename='healthData.jpeg') }}" id="bigPicture"></img>
+                <img src="{{ url_for('static', filename='InStock.png') }}" id="bigPicture"></img>
             </div>
         </div>
     </div>
     <div class="container mb-5 mt-5">
         <!-- THE BENEFITS COLUMNS -->
 
-        <div class="jumbotron text-center bg-light">
-            <h3 class="m2">EasyHealth</h3>
+        <div class="jumbotron text-center">
+            <h3 class="m2">EasyHealth (Separate Website and iPhone App)</h3>
         </div>
 
         <div class="row text-center">
-            <p> Easily Share Medical Info with Personal Doctor, by uploading documents and sending information.
+            <p> Easily Share Medical Info with your personal doctor by uploading documents and sending information.
                 Patients can sign up and login as well as Doctors. The website can tell whether a patient or user is
                 authenticated
                 based on the sign up process. If a patient sends a document to their doctor, their ID is automatically
                 tied to their document.
                 The SQL relational database then ties the patient and the doctor. Doctors can also send documents and
                 the same happens to them.
-                Live link: https://easyhealth.herokuapp.com/
+                Technologies: Created with Python, HTML, Jinja2, Flask, SQL and Bootstrap
+                Live link: <a href="https://easyhealth.herokuapp.com/">EasyHealth</a>
             </p>
             <div class="container">
-                <img src="{{ url_for('static', filename='healthData.jpeg') }}" id="bigPicture"></img>
+                <img src="{{ url_for('static', filename='Easyhealth.png') }}" id="bigPicture"></img>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5 mt-5">
+        <!-- THE BENEFITS COLUMNS -->
+
+        <div class="jumbotron text-center">
+            <h3 class="m2">Get Big</h3>
+        </div>
+
+        <div class="row text-center">
+            <p> In this game, the player plays against a computer to collect dots to get bigger before the computer does. If the player 
+                is bigger than the computer, they can eat them, and then win the game. They can select to play again or quit in the menu 
+                screens.
+
+                Play the game through this link by running it at the top: <a href="https://replit.com/join/bhxwkjrl-aetrix">Get Big</a>
+            </p>
+            <div class="container">
+                <img src="{{ url_for('static', filename='InStock.png') }}" id="bigPicture"></img>
             </div>
         </div>
     </div>
