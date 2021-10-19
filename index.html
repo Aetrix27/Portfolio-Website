@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>David's Portfolio</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- BOOTSTRAP THEME (Downloaded from Themes website)-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white" href="index.html">David's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="index.html">Projects <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <h1 class="text-center" style="margin-top: 25px;">Software Projects</h1>
+    <div class ="card">
+    <div class="container mb-5 mt-5 fade-in expandable">
+        <!-- THE BENEFITS COLUMNS -->
+
+        <div class="jumbotron text-center">
+            <h3 class="m2">In Stock Gaming Hardware Checker</h3>
+        </div>
+
+        <div class="row text-center">
+            <p> Checks if gaming items are in stock from Amazon, using an API called Requests HTML.
+                In recent months, it has been hard to find graphics cards and gaming consoles due to bots and scalpers
+                taking them as
+                soon as they are available, and the global silicon chip shortage. This gives power back to the people.
+
+            </p>
+            <div class="container">
+                <img src="InStock.png" id = "bigPicture"/>
+            </div>
+            <div style="margin-top: 10px;">Technologies: Python, requests_html API, HTML and Bootstrap</div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class ="card">
+        <div class="container mb-5 mt-5 fade-in">
+            <!-- THE BENEFITS COLUMNS -->
+
+            <div class="jumbotron text-center">
+                <h3 class="m2">EasyHealth (Website and iPhone App)</h3>
+            </div>
+
+            <div class="row text-center">
+                <p> Easily Share Medical Info with your personal doctor by uploading documents and sending information.
+                    Patients can sign up and login as well as Doctors. The website can tell whether a patient or user is
+                    authenticated
+                    based on the sign up process. If a patient sends a document to their doctor, their ID is automatically
+                    tied to their document.
+                    The SQL relational database then ties the patient and the doctor. Doctors can also send documents and
+                    the same happens to them.
+        
+                </p>
+              
+                    <img src="EasyHealth.png" id = "bigPicture"/>
+                </div>
+                <div>Technologies: Created with Python, HTML, Jinja2, Flask, SQL and Bootstrap</div>
+                <div>Live link: <a href="https://easyhealth.herokuapp.com/">EasyHealth</a></div>
+                <div>
+            </div>
+        </div>
+    </div>
+
+    <div class ="card">
+
+        <div class="container mb-5 mt-5 fade-in">
+            <!-- THE BENEFITS COLUMNS -->
+
+            <div class="jumbotron text-center">
+                <h3 class="m2">Interactive Slideshow</h3>
+            </div>
+
+            <div class="row text-center">
+                <p> This is a JQuery animated and interactive slideshow of pictures with information, and can obtain information from
+                    Microsoft Excel CSV files.
+
+                </p>
+            </div>
+            <div>
+                Technologies: Created with HTML, Javascript, and JQuery
+            </div>
+            <div>
+
+                Github: <a href="https://github.com/Aetrix27/Slideshow">EasyHealth</a>
+            </div>
+        </div>
+    </div>
+    <div class = "card">
+        <div class="container mb-5 mt-5 fade-in">
+            <!-- THE BENEFITS COLUMNS -->
+
+            <div class="jumbotron text-center">
+                <h3 class="m2">Car Events Website</h3>
+            </div>
+
+            <div class="row text-center">
+                <p> Calendar based website where users can click on a day and add car show events for that day. 
+                    Users can edit, delete and update posts and see images.
+                    Technologies: Created with HTML, Python, Flask, Jinja and MongoDB
+                    
+                </p>
+                <div>Live Link: <a href="https://carshowevents.herokuapp.com/"> Car Show Events</a></div>
+            
+            </div>
+        </div>
+    </div>  
+
+    <div class = "card">
+        <div class="container mb-5 mt-5 fade-in">
+            <!-- THE BENEFITS COLUMNS -->
+
+            <div class="jumbotron text-center">
+                <h3 class="m2">Get Big</h3>
+            </div>
+
+            <div class="row text-center">
+                <p> In this game, the player plays against a computer to collect dots to get bigger before the computer does. If the player 
+                    is bigger than the computer, they can eat them, and then win the game. They can select to play again or quit in the menu 
+                    screens.
+
+                </p>
+               
+            </div>
+    
+            <div class="container">
+                <img src="getbig.png" id = "bigPicture"/>
+            </div>
+            <div style="margin-top: 10px;">
+            Technologies: Created with Python and Pygame
+            </div>
+            <div>
+
+            Play the game through this link by running it at the top: <a href="https://replit.com/join/bhxwkjrl-aetrix">Get Big</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "card">
+        <div class="container mb-5 mt-5 fade-in">
+            <!-- THE BENEFITS COLUMNS -->
+
+            <div class="jumbotron text-center">
+                <h3 class="m2">HighlyFit</h3>
+            </div>
+
+            <div class="row text-center">
+                <p> Workout website where any user can upload a workout card, and there is a 
+                    corresponding 3D model on the site that loads, showing the different 
+                    muscles of the body. Was worked on as a team, and I accomplished adding the 3D model API and database.
+                    Technologies: Created with HTML, Python, Flask, Jinja, ThreeJS API and MongoDB
+                    
+                </p>
+                <div>Live Link: <a href="https://highly-fit.herokuapp.com/">HighlyFit</a></div>
+            
+            </div>
+    </div>
+</div>
+
+    
+</body>
